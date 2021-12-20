@@ -1,11 +1,11 @@
 import Navbar from './Navbar/Navbar';
 import Profile from './Profile/Profile';
-import { BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+import { HashRouter as Router, Route, Switch} from 'react-router-dom'
 import Login from './Login/login';
 import Registration from './Registration/Registration';
 function App() {
   return (
-    <Router basename='/'>
+    <Router hashType='slash' basename='/>
     <div className="App">
      <Switch>
     <Route exact path="/">
