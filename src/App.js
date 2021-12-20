@@ -8,6 +8,10 @@ function App() {
     <Router>
     <div className="App">
      <Switch>
+    <Route exact path="/">
+            <Navbar show={false}></Navbar>
+            <Login></Login>
+          </Route>
           <Route exact path="/profile">
             <Navbar show={true}></Navbar>
             <Profile></Profile>
