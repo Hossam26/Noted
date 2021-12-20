@@ -5,7 +5,7 @@ import Login from './Login/login';
 import Registration from './Registration/Registration';
 function App() {
   return (
-    <Router>
+    <Router basename='/'>
     <div className="App">
      <Switch>
     <Route exact path="/">
